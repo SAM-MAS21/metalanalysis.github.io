@@ -1,0 +1,254 @@
+
+@media only screen and (max-width: 768px) {
+  .main {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  
+  }
+}
+.main{
+    background: url('../images/metal1.jpg');
+    height: 100vh;
+    background-position:center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
+.main-content{
+  width: 99vw;
+  height:50vh;
+
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-main-content{
+  width: 70vw;
+  height: 10vh;
+
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+.sub-main-content h1{
+  text-align: center;
+  font-weight: 700;
+}
+.sub-main-content p{
+  text-align: center;
+
+}
+
+.cr:hover{
+  color: rgb(16, 183, 235);
+
+}
+
+
+/* counter up */
+.counter-up{
+  background:url('../images/counter-image.jpg') no-repeat;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  /* background-position: center; */
+ 
+ 
+}
+.counter-up::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width:100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.counter-up .content{
+  position: relative;
+  z-index: 2;
+  display: flex; 
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .box{
+  width: calc(25% - 30px);
+  border: 1px dashed #10b7eb99;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  color: #fff;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.content .box .icon{
+  font-size: 48px;
+  color: #10b7eb99;
+}
+.content .box .counter{
+  font-size: 50px;
+  color: #f2f2f2;
+  font-weight: 500;
+}
+.content .box .text{
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media (max-width: 1036px){
+  .counter-up{
+    padding: 50px 50px 0 50px;
+  }
+  .content .box{
+    width: calc(50% - 30px);
+    margin-bottom:50px;
+  }
+}
+@media (max-width: 580px){
+  .content .box{
+    width:100%;
+  }
+}
+/* SliderLOgo */
+.bodyS{
+  min-height: 40vh;
+  display: grid;
+  place-items: center;
+}
+.sliderlogo{
+  height: 250px;
+  margin: auto;
+  position:relative;
+  width: 90%;
+  display:grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track{
+  display: flex;
+  width: calc(250px * 12);
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+
+  }
+  100%{
+    transform: translateX(calc(-250px * 6));
+  }
+}
+
+.slideS{
+  height: 100px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+#imgS{
+  width: 100%;
+  transition:transform 1s;
+}
+#imgS:hover{
+ transform: translateZ(20px);
+}
+/* Gradient Shadow */
+
+.sliderlogo::before,
+.sliderlogo::after{
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position:absolute;
+  width: 15%;
+  z-index: 2;
+}
+.sliderlogo::before{
+  left:0;
+  top:0
+}
+.sliderlogo::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+
+
+/* side icon css  */
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar #ai {
+  width: 18rem;
+  background:transparent;
+  color: #10b7eb99;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.7rem;
+  padding: 0.9rem;
+  transition: all 0.5s linear;
+  transform: translateX(-14.5rem);text-decoration: none;
+}
+
+/* .icon-bar a:hover {
+  transform: translateX(0);
+} */
+
+.icon-bar #ai .fab {
+  padding-left: 1rem;
+  font-size: 2rem;
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+.icon-bar  .twitter {
+  background: #58badd;
+}
+
+.icon-bar  .instagram {
+  background: #e4405f;
+}
+
+.icon-bar  .youtube {
+  background: #cd201f;
+}
+
+.icon-bar  .linkedin {
+  background: #0077b5;
+}
+
+
+
+
+
+
+

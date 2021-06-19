@@ -1,0 +1,191 @@
+.crigle{
+    font-size: 20px;
+    color: #10b7eb;
+    font-weight:bold;
+    /* border: 1px solid #10b7eb;
+    border-collapse: collapse; */
+}
+table,thead,tbody,tr, th,td{
+    border: 2px solid #10b7eb;
+    border-collapse: collapse;
+    padding: 15px;
+    margin: 15px;
+    font-size: 15px;
+   
+}
+tr:hover{
+    color: brown;
+}
+table{
+    width:90%;
+    /* text-align: center; */
+    
+}
+#serial1{
+    text-align: center;
+}
+.card101{
+    /* border: 1px solid black;
+    border-radius:1rem;
+    height: 200px;
+    margin: 2rem; */
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 40%;
+  
+  
+}
+
+/* Card */
+.bodyC{
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.grid{
+    display: grid;
+    width: 114rem;
+    grid-gap:6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    align-items:  start;
+}
+.grid-item{
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow:0 3rem 6rem rgba((0), 0, 0, 0.1);
+    cursor: pointer;
+    transition:0.2s;
+}
+.grid-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow:0 4rem 8rem rgba(0,0,0,0.5);
+}
+.card-img{
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+.card-content{
+    padding: 3rem;
+}
+.card-header{
+    font-size: 3rem;
+    font-weight: 500;
+    color:#fff;
+    margin-bottom: 1.5rem;
+}
+
+.card-text{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: royalblue;
+    margin-bottom: 2.5rem;
+}
+.card-btn{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d830fd;
+    border: none;
+    border-radius:0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+
+/* Card Approval */
+
+.gridA{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:30px;
+    align-items: center;
+}
+
+.gridA > articleA{
+    background: #eee5e9;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform .3s;
+}
+
+.gridA > articleA:hover{
+transform: translateY(5px);
+box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.gridA > articleA img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.textA{
+    padding: 0 20px 20px;
+}
+.textA h3{
+    text-transform: uppercase;
+}
+
+.textA button{
+    background: #ef6f6c;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .gridA{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px){
+    .gridA{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.gridA > articleA{
+    text-align: center;
+}
+
+
+
+
+
+/* Second Card */
+
+.img1c{
+    border: 1px solid #10b7eb;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    border-radius: 10px;
+    margin-right: 1rem;
+    width: 100%;
+    padding: 15px 15px;
+  
+
+}
+

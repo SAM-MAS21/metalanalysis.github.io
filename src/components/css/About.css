@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap');
+*{
+    font-family: 'Vollkorn', serif serif !important;
+
+}
+.about-us{
+    padding: 0px 10px 0px 10px;
+}
+p{
+    text-align: center;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 27px;
+}
+/* 
+why choose */
+
+ul.whychoose-list{
+    width:100%;
+    float:left;
+    margin:0px;
+    padding:0px;
+}
+ul.whychoose-list li{
+    list-style:none;
+    float:left;
+    width:100%;
+    padding:0px 0px 0px 94px;
+    margin-bottom:50px;
+}
+
+ul.whychoose-list li.delivery-icon{
+    background:url(../images/delivery-icon.png) no-repeat 10px 0px;
+}
+ul.whychoose-list li.history-icon{
+    background:url(../images//technology-icon.png) no-repeat 10px 0px;
+}
+ul.whychoose-list li.time-icon{
+    background:url(../images/support-icon.png) no-repeat 10px 0px;
+}
+.time-icon:hover{
+    color:#10b7eb ;
+}

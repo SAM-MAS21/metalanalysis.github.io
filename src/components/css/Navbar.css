@@ -1,0 +1,100 @@
+
+span:hover{
+  /* background-color: chartreuse; */
+    color: #10b7eb;
+    transition: all 0.3s linear;
+}
+
+.nav-link span:before{
+    content:"";
+    position: absolute;
+    left:0;
+    top:100%;
+    width:0%;
+    height:3px;
+    background-color: #10b7eb;
+    transition: all 0.5s linear;
+}
+.nav-link span:hover:before{
+    width: 100%;
+    background-color: #10b7eb;
+}
+
+.nav-link{
+    font-weight:700px;
+    /* letter-spacing: 1px; */
+    position: relative;
+    text-transform: uppercase;
+  
+}
+
+/* side icon css  */
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  
+  .icon-bar #ai {
+    width: 18rem;
+    background:transparent;
+    color: #10b7eb99;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 0.9rem;
+    transition: all 0.5s linear;
+    transform: translateX(-14.5rem);text-decoration: none;
+  }
+  
+  /* .icon-bar a:hover {
+    transform: translateX(0);
+  } */
+  
+  .icon-bar #ai .fab {
+    padding-left: 1rem;
+    font-size: 2rem;
+    animation: letszoom 3s linear alternate-reverse infinite;
+  }
+  
+  @keyframes letszoom {
+    from {
+      transform: scale(0.6);
+    }
+    to {
+      transform: scale(0.9);
+    }
+  }
+  
+  .icon-bar  .twitter {
+    background: #58badd;
+  }
+  
+  .icon-bar  .instagram {
+    background: #e4405f;
+  }
+  
+  .icon-bar  .youtube {
+    background: #cd201f;
+  }
+  
+  .icon-bar  .linkedin {
+    background: #0077b5;
+  }
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
